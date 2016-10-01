@@ -1,0 +1,21 @@
+{
+    "name": "bootstrap-multiselectsplitter",
+    "version": "1.0.0",
+    "homepage": "https://github.com/poolerMF/bootstrap-multiselectsplitter",
+    "keywords": [
+        "bootstrap",
+        "multiselect",
+        "splitter"
+    ],
+    "license": "MIT",
+    "main": [
+        "bootstrap-multiselectsplitter.js"
+    ],
+    "ignore": [
+        "bower_components"
+    ],
+    "dependencies": {
+        "jQuery": ">= 1.9.1",
+        "bootstrap": ">= 3.0"
+    }
+}
