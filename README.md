@@ -7,11 +7,11 @@ If you want to select more options, you must hold CTRL key. (default select beha
 
 This:
 
-![image1](http://img4.hostingpics.net/pics/927121bootstrapselectsplitterimage1.png)
+![image1](http://i.imgur.com/PqjsWDB.png)
 
 Becomes this:
 
-![image2](http://img4.hostingpics.net/pics/997752bootstrapselectsplitterimage2.png)
+![image2](http://i.imgur.com/6kkJLBY.png)
 
 
 ## Dependencies
