@@ -7,11 +7,11 @@ If you want to select more options, you must hold CTRL key. (default select beha
 
 This:
 
-![image1](http://i.imgur.com/PqjsWDB.png)
+![image1](http://img4.hostingpics.net/pics/927121bootstrapselectsplitterimage1.png)
 
 Becomes this:
 
-![image2](http://i.imgur.com/6kkJLBY.png)
+![image2](http://img4.hostingpics.net/pics/997752bootstrapselectsplitterimage2.png)
 
 
 ## Dependencies
@@ -59,6 +59,9 @@ Each &lt;option&gt; of your &lt;select&gt; must have a unique value.
 ```
 ```JavaScript
 $('select').multiselectsplitter();
+$('select').multiselectsplitter('enable');
+$('select').multiselectsplitter('disable');
+$('select').multiselectsplitter('destroy');
 ```
 
 ## Examples
@@ -78,6 +81,12 @@ $('select').multiselectsplitter();
 * **createFirstSelect** - function for creating option in first select `DEFAULT: function (label, $originalSelect) { return '<option>' + label + '</option>'; }`
 * **createSecondSelect** - function for creating option in second select `DEFAULT: function (label, $firstSelect) { return '<option>' + label + '</option>'; }`
 * **template** - template for new selects `DEFAULT: <div class="row" data-multiselectsplitter-wrapper-selector><div class="col-xs-12 col-sm-6"><select class="form-control" data-multiselectsplitter-firstselect-selector></select></div><div class="col-xs-12 col-sm-6"><select class="form-control" data-multiselectsplitter-secondselect-selector></select></div></div>`
+
+
+## Changes
+1.0.1 - added functions for disabling/enabling
+
+1.0.0 - release
 
 ## Copyright and license
 

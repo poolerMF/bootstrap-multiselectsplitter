@@ -1,6 +1,6 @@
 /**
  * Bootstrap multiselectsplitter plugin
- * Version: 1.0.0
+ * Version: 1.0.1
  * License: MIT
  * Homepage: https://github.com/poolerMF/bootstrap-multiselectsplitter
  */
@@ -103,6 +103,11 @@
             self.$secondSelect.attr('multiple', 'multiple');
         }
 
+        // Set disabled
+        if (self.$element.is(":disabled")) {
+            self.disable();
+        }
+
         // Define events.
         self.$firstSelect.on('change', $.proxy(self.updateParentCategory, self));
         self.$secondSelect.on('click change', $.proxy(self.updateChildCategory, self));
@@ -130,6 +135,16 @@
         if (self.options.afterInitialize) {
             self.options.afterInitialize(self.$firstSelect, self.$secondSelect);
         }
+    };
+
+    MultiSelectSplitter.prototype.disable = function () {
+        this.$secondSelect.prop('disabled', true);
+        this.$firstSelect.prop('disabled', true);
+    };
+
+    MultiSelectSplitter.prototype.enable = function () {
+        this.$secondSelect.prop('disabled', false);
+        this.$firstSelect.prop('disabled', false);
     };
 
     MultiSelectSplitter.prototype.createSecondSelect = function () {
@@ -328,6 +343,6 @@
 
     $.fn.multiselectsplitter = Plugin;
     $.fn.multiselectsplitter.Constructor = MultiSelectSplitter;
-    $.fn.multiselectsplitter.VERSION = '1.0.0';
+    $.fn.multiselectsplitter.VERSION = '1.0.1';
 
 }(jQuery);
